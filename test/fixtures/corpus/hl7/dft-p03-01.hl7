@@ -1,0 +1,9 @@
+MSH|^~\&|CHARGEMGR|THISTLEBRIDGE MEDICAL GROUP|BILLSYS|THISTLEBRIDGE BILLING|20261031180342||DFT^P03|TMG-DFT-20261031-18|P|2.4
+EVN|P03|20261031180300
+PID|1||TB-5521093^^^TMG^MR||Tobelkin^Ebberstone^Rufus||19470810|M|||4 Weatherby Close^^Hobbsford^KS^66044^USA||(785)555-0119|||||TMG-ACC-7740318|918-27-5530
+PV1|1|O|OFFICE5^^^TMG||||7702146^Windermoot^Calloway^^^MD||||||||||7702146^Windermoot^Calloway^^^MD||TMG-V-60412|||||||||||||||||||||||||20261031093000
+FT1|1|TXN-33010||20261031|20261031|CG|99214^Office visit established^CPT|||1|||OFFICE5|||OFFICE5|||I10^Essential hypertension^I10|7702146^Windermoot^Calloway^^^MD|7702146^Windermoot^Calloway^^^MD|125.00|||99214^Office visit established^CPT
+FT1|2|TXN-33011||20261031|20261031|CG|93000^ECG tracing^CPT|||1|||||||||I10^Essential hypertension^I10|7702146^Windermoot^Calloway^^^MD||45.00
+DG1|1||I10^Essential hypertension^I10||20261031|F
+IN1|1|MED01^Senior Plan|CRV-30118|Corvane Health Plan|POB 8800^^Plainsford^KS^66601||(785)555-0105^WPN^PH|GRP-5510-77||||||||Tobelkin^Ebberstone^Rufus|01|19470810||||||||||||||||||CERT-90274401-A|||||||||||||CHP-MEMBER-8820145
+GT1|1|GRT-77310|Tobelkin^Ebberstone^Rufus||4 Weatherby Close^^Hobbsford^KS^66044^USA|(785)555-0119||19470810|M||01|918-27-5530

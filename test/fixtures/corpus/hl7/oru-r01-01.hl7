@@ -1,0 +1,17 @@
+MSH|^~\&|LABSYS|CORVELLE LABS|EHRIN|NASHMERE CLINIC|20261104081230||ORU^R01^ORU_R01|CL-ORU-2026110400872|P|2.5.1
+PID|1||TH-3340187^^^NASH^MR||Thornwhistle^Bronwick^Ewart||19680504|M|||2250 Kiltrannock Drive^^Nashmere^TN^37215^USA||(615)555-0143|||||NC-ACC-5520731|931-60-2284
+PV1|1|O|LAB^^^NASH||||7710422^Lindqvarn^Maxim^^^MD||||||||||||NC-V-3319084
+ORC|RE|NC-PLC-770145|CL-FIL-2290177
+OBR|1|NC-PLC-770145|CL-FIL-2290177|24323-8^Metabolic panel^LN|||20261104071500|||||||20261104072000||7710422^Lindqvarn^Maxim^^^MD||||||20261104080500|||F|||||||8830455^Haverbrook^Isidor^^^MD
+OBX|1|NM|718-7^Hemoglobin^LN||13.8|g/dL|12.0-16.0|N|||F|||20261104071500||8830210^Quillorn^Maxim^^^MD|||20261104072500||||CORVELLE LABS^^^^^^XX^^^7710993|1 Assay Plaza^^Nashmere^TN^37203|8830455^Haverbrook^Isidor^^^MD
+OBX|2|NM|2823-3^Potassium^LN||5.4|mmol/L|3.5-5.1|H|||F|||20261104071500
+OBX|3|ST|5778-6^Urine color^LN||Amber|||N|||F
+OBX|4|TX|NOTE^Technologist comment||Specimen slightly hemolyzed. Patient Bronwick Thornwhistle phoned on 2026-11-04 about timing; call back (615)555-0143.||||||F
+OBX|5|FT|NOTE2^Pathologist comment||Review with Dr. Quillorn.\.br\Repeat draw advised; send copy to bronwick.t@postbox.example\.br\Reference: Thornwhistle, B.||||||F
+OBX|6|DT|COLLDATE^Collection date||20261104||||||F
+OBX|7|CWE|883-9^ABO group^LN||A POS^A positive^L||||||F
+OBX|8|XPN|NOK^Next of kin name||Thornwhistle^Marisavel^^^^^L||||||F
+OBX|9|XAD|NOKADDR^Next of kin address||17 Fallowbrook Chase^^Eddlemere^TN^37203^USA||||||F
+OBX|10|XTN|NOKPH^Next of kin phone||^PRN^PH^^^615^5550102||||||F
+OBX|11|TS|RECV^Received at lab||20261104072000||||||F
+OBX|12|CX|SPECID^Specimen container id||SPC-88420133^^^CORV^SPC||||||F

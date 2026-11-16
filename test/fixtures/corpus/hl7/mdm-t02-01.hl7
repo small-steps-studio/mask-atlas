@@ -1,0 +1,6 @@
+MSH|^~\&|DICTATE|FERNSHAW SPECIALTY CLINIC|DOCSTORE|FERNSHAW SPECIALTY CLINIC|20261021142230||MDM^T02^MDM_T02|FSC-MDM-9920147|P|2.5.1
+EVN|T02|20261021142200
+PID|1||CV-0447718^^^FSC^MR||Cavendrowe^Fenwyth^Orlan||19590118|M|||12 Sedgemoor Rise^^Lowhaven^CT^06103^USA||(860)555-0151|||||FSC-ACC-2204418|947-50-3321
+PV1|1|O|CARD^^^FSC||||2290487^Aldermarston-Voe^Thessaly^^^MD||||||||||||FSC-V-1180932
+TXA|1|CN|TX|20261021133000|2290487^Aldermarston-Voe^Thessaly^^^MD|20261021133000|20261021141500||2290487^Aldermarston-Voe^Thessaly^^^MD||TR9921^Brightwarren^Odessa|FSC-DOC-5570231||FSC-PLC-33910|FSC-FIL-33911||AU
+OBX|1|FT|11488-4^Consultation note^LN||HISTORY OF PRESENT ILLNESS\.br\Mr. Cavendrowe is a 67-year-old man (born 1959-01-18) seen for palpitations. He lives at 12 Sedgemoor Rise and can be reached on (860)555-0151.\.br\ASSESSMENT\.br\Atrial premature beats. Metoprolol 25 mg started. Follow-up letter to fenwyth.cavendrowe@postbox.example.\.br\PLAN\.br\Return in six weeks.||||||F

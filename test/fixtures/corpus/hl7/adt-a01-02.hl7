@@ -1,0 +1,12 @@
+MSH|^~\&|ADMITPRO|VARNHOLT HEALTH CAMPUS|CAREHUB|VARNHOLT HEALTH CAMPUS|20261023141507||ADT^A01^ADT_A01|VHC-20261023-0173|P|2.5.1|||AL|NE
+EVN||20261023141500|||CLERK4471^Sandvale^Perrith|20261023141000
+PID|1|PT-90314477|VHC903144^^^VARNHOLT^MR~620-48-3317^^^USA^SS||Brantvik-Osei^Corwenna^Leone^^Ms.|Osei^Madrelle|19880317|F|||582 Whitlow Crescent^Unit 14B^Marrowfield^PA^17055^USA^H~PO Box 7710^^Marrowfield^PA^17055^USA^M||(717)555-0163^PRN^PH^^^717^5550163~^NET^Internet^corwenna.brantvik@mailbox.example|(717)555-0129^WPN^PH|en|S||VHC-ACC-2210945|620-48-3317|S34771902^PA
+NK1|1|Brantvik-Osei^Teodrick^R|FTH^Father|1190 Harrowgate Lane^^Dunmere^PA^17062^USA|(717)555-0188^PRN^PH|(717)555-0190^WPN^PH|EC^Emergency Contact|||||EMP-558201|Kessendale Fabrication|||19581209||||||||||||||Brantvik-Osei^Yselda|(717)555-0191^PRN^PH|1190 Harrowgate Lane^^Dunmere^PA^17062^USA|NKID-77310^^^VARNHOLT^NI||||913-55-2024
+PV1|1|I|4N^418^A^VHC||||8814203^Hargreave-Lundt^Meriadoc^^^Dr|8814977^Pellworth^Isaura^^^Dr|||||||||8814203^Hargreave-Lundt^Meriadoc^^^Dr|IP|VHC-V-4471093|||||||||||||||||||||||||20261023133000
+PV2|||Shortness of breath and glucose of 412 mg/dL. Corwenna Brantvik-Osei lives alone, father Teodrick is the contact at (717)555-0188.
+AL1|1|DA|^Latex|MO|RASH
+DG1|1||R07.9^Chest pain, unspecified^I10||20261023133000|A
+DG1|2||E11.9^Type 2 diabetes mellitus without complications^I10||20261023133000|W
+IN1|1|BC001^Plan A|VTM-44190|Vantrel Mutual Health|PO Box 2210^^Ostmere^IL^60447|Hennerly Voss|(815)555-0114^WPN^PH|GRP-7720-45|Kessendale Fabrication|KFAB-GRP-1|Kessendale Fabrication|20260101|20261231|||Brantvik-Osei^Corwenna^Leone|01|19880317|582 Whitlow Crescent^Unit 14B^Marrowfield^PA^17055^USA|||||||||||||||||POL-5530-8821|||||||||||||VM-MEMBER-77190322
+IN2|EMP-558201|913-55-2024|Kessendale Fabrication
+GT1|1|GRT-20771|Brantvik-Osei^Teodrick^R||1190 Harrowgate Lane^^Dunmere^PA^17062^USA|(717)555-0188^PRN^PH|(717)555-0190^WPN^PH|19581209|M|P|FTH|913-55-2024||||Kessendale Fabrication|||EMP-558201|F

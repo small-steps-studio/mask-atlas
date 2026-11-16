@@ -1,0 +1,8 @@
+MSH|^~\&|PERSONIDX|CORVELLE REGIONAL|MPIHUB|CORVELLE REGIONAL|20261109120145||ADT^A28|CR2611091201|T|2.3.1||||||
+EVN|A28|20261109120100||||
+PID|1|""|VX-5520813^^^CORV^MR~986-24-1105^^^USA^SS||Vexholm^Perrimon^Z||19950601|""|||95 Thistledown Lane^^Quillmere^WA^98101||(206)555-0188|""|""|""||CR-ACC-300145|986-24-1105|""|
+NK1|1|Vexholm^Lilimarque|SIS|95 Thistledown Lane^^Quillmere^WA^98101|(206)555-0145||
+PV1|1|N|||||||
+OBX|1|ST|LANG^Preferred language||English||||||F
+OBX|2|ST|NOTE^Registration note||Contact Perrimon Vexholm by letter only; no calls||||||F
+OBX|3|ST|SRC^Entry workstation||10.80.2.17||||||F

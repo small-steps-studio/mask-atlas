@@ -1,0 +1,7 @@
+MSH|^~\&|PERSONSYNC|DUSKERTON PEDIATRICS|MPIHUB|DUSKERTON PEDIATRICS|20261030101520+0100||ADT^A31^ADT_A05|DP-A31-4471|P|2.8
+EVN||20261030101500||01
+PID|1||DP-770412^^^DUSKPED^MR~DP-NHI-31884120^^^NATL^NH||Draymoor^Zephrine^Anwen^^^^L|Draymoor^Ottolenne|20150428|F|||14 Coldharbour Passage^^Hollowfen^^CB4 8TQ^GBR^H||01865 555 0137^PRN^PH|||||DP-ACC-2290817|||||||||||||||20261030101000|||||||^NET^Internet^draymoor.family@mailbox.example~^PRN^PH^^44^1865^5550137
+PD1|||DUSKERTON PEDIATRICS^^^^^^FI^^^^DP-ORG-0310|9021837^Hartigan-Pell^Cosmo^^^Dr
+NK1|1|Draymoor^Ottolenne^|MTH|14 Coldharbour Passage^^Hollowfen^^CB4 8TQ^GBR|01865 555 0137^PRN^PH||||||||||||||||||||||||||01865 555 0162^PRN^PH
+PV1|1|O|PEDS1^^^DUSKPED||||9021837^Hartigan-Pell^Cosmo^^^Dr||||||||||||DP-V-31772
+OBX|1|TX|NOTE^Registration note||Parent Ottolenne Draymoor prefers e-mail at draymoor.family@mailbox.example for appointment letters about Zephrine.||||||F

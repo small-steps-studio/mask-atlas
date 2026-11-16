@@ -1,0 +1,14 @@
+MSH|^~\&|RADREPORT|ULMSTEAD ORTHO|DOCARCH|ULMSTEAD ORTHO|20261019113005||ORU^R01|UO-RPT-0044187|P|2.4
+PID|1||BD-558201^^^ULMO^MR||Belgravane^Dorrelle^Neve||19731212|F|||8 Hesperlowe Lane^^Orrinton^MA^02108^USA||(617)555-0126|(617)555-0184||||UO-ACC-81230|952-80-1417
+PV1|1|O|MRI1^^^ULMO||||5518703^Tanglerowen^Evander^^^MD||||||||||||UO-V-994012
+ORC|RE|UO-PLC-33018|UO-FIL-77120|||||||||5518703^Tanglerowen^Evander^^^MD
+OBR|1|UO-PLC-33018|UO-FIL-77120|30797-9^MRI knee left^LN|||20261019090000|||||||||5518703^Tanglerowen^Evander^^^MD||||||20261019112000|||F|||||||6602914^Ashgrove-Mbeki^Linnet^^^MD
+OBX|1|TX|GDT^Findings||Mild joint effusion. Meniscus intact. No acute fracture seen.||||||F
+OBX|2|TX|IMP^Impression||Small effusion, otherwise unremarkable study for Dorrelle Belgravane.||||||F
+OBX|3|XPN|REFPHYS^Referring physician||Tanglerowen^Evander^^^Dr||||||F
+OBX|4|XAD|SITE^Imaging site address||410 Marlpit Boulevard^Suite 3^Orrinton^MA^02109^USA||||||F
+OBX|5|XTN|SITEPH^Imaging site phone||^WPN^PH^^^617^5550190||||||F
+OBX|6|XTN|PTEMAIL^Patient e-mail||^NET^Internet^d.belgravane@postbox.example||||||F
+OBX|7|ST|SIGNED^Signed by||Ashgrove-Mbeki, Linnet MD||||||F
+OBX|8|RP|IMG^Image link||https://pacs.ulmstead-ortho.example/img/UO-FIL-77120.jpg^^IMAGE||||||F
+NTE|1||Copy of the report released to patient Belgravane on request, 2026-10-21.

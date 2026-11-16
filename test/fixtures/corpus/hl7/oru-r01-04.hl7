@@ -1,0 +1,8 @@
+MSH|^~\&|HEMATOLINE|VYSOKOLUH LABORATORIA|CLINICIN|ŽLUTICE POLIKLINIKA|20261107112340||ORU^R01^ORU_R01|VL-ORU-20261107-5|P|2.6|||AL|NE|CZE|UNICODE UTF-8
+PID|1||VL-8820471^^^ZLUT^MR||Nováček-Ferreyrón^Dobromylka^Šárka||19890103|F|||Čapkova 8/14^^Žlutice^^36401^CZE||+420 555 013 912^PRN^PH~^NET^Internet^d.novacek@postbox.example|||||ZP-ACC-77310|936-45-1127
+PV1|1|O|AMB^^^ZLUT||||6613807^Šťastný-Orlovská^Radomíra^^^MUDr||||||||||||ZP-V-440912
+ORC|RE|ZP-PLC-551230|VL-FIL-88231
+OBR|1|ZP-PLC-551230|VL-FIL-88231|58410-2^Krevní obraz^LN|||20261107080000|||||||||6613807^Šťastný-Orlovská^Radomíra^^^MUDr||||||20261107111500|||F
+OBX|1|NM|718-7^Hemoglobin^LN||118|g/L|120-160|L|||F|||20261107080000
+OBX|2|NM|6690-2^Leukocyty^LN||6.8|10*9/L|4.0-10.0|N|||F|||20261107080000
+NTE|1||Výsledek odeslán pacientce Dobromylce Nováček-Ferreyrón\X0D\Telefon +420 555 013 912\X0D\Informována sousedka Gaudemar Ilhanov při osobním převzetí.

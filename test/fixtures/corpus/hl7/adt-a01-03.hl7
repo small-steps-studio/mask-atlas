@@ -1,0 +1,9 @@
+MSH|^~\&|REGSYS|PENHALLOWE REGIONAL|ORDHUB|BRANTWELL LAB|20261112071045||ADT^A01^ADT_A01|PR-ESC-20261112-03|P|2.5.1
+EVN|A01|20261112071000
+PID|1||PC-4410223^^^PRH^MR||Pencarvick^Wystan^Ambrose||19660822|M|||77 Gantry Street^^Elmsworth^OR^97205^USA||(503)555-0165|||||PR-ACC-30188|939-71-4426
+NK1|1|Pencarvick^Brisabelle|SPO||(503)555-0165||||||||Harrow \T\ Pell Joinery
+PV1|1|I|2N^210^B^PRH||||5530916^Dunmarrow-Kell^Isaura^^^MD||||||||||||PR-V-8870312|||||||||||||||||||||||||20261112065500
+PV2|||Pain level 7\S\10 reported by Pencarvick\.br\Employer: Harrow \T\ Pell Joinery\.br\Phone: (503)555-0165\F\ward 3\R\bed 4\E\ check\X0D\Second line after carriage return.
+IN1|1|PL02|CRV-30118|Corvane Health Plan||||GRP-6602-31|Harrow \T\ Pell Joinery|||||||Pencarvick^Wystan^Ambrose||||||||||||||||||||POL-7712-4400|||||||||||||CHP-MEMBER-4410923
+DG1|1||S83.411A^Sprain of knee ligament^I10||20261112
+AL1|1|DA|^Codeine|MO|NAUSEA

@@ -1,0 +1,8 @@
+MSH|^~\&|IMMREG|SOLWENDALE HEALTH DEPARTMENT|STATEIIS|STATE REGISTRY|20261015120502||VXU^V04^VXU_V04|SHD-VXU-5530012|P|2.5.1|||ER|AL
+PID|1||ZM-2290451^^^SHD^MR||Zavrelkov^Mirellane^Joss^^^^L|Zavrelkov^Okanna^^^^^M|20230309|F|||63 Crabapple Hollow^^Solwendale^OR^97035^USA^H||(971)555-0132^PRN^PH|||||SHD-ACC-4410|
+NK1|1|Zavrelkov^Okanna^Perth|MTH^Mother|63 Crabapple Hollow^^Solwendale^OR^97035^USA|(971)555-0132^PRN^PH~^NET^Internet^okanna.zavrelkov@mailbox.example|||||||||||19930624|||||||||||||||||||||961-42-9908
+ORC|RE|SHD-ORC-55821|SHD-IMM-90310|||||||||6620518^Castellwren^Ingrith^^^MD|||||SOLWENDALE CLINIC 3
+RXA|0|1|20261015115500|20261015115500|140^Seasonal flu shot^CVX|0.25|mL|||6620518^Castellwren^Ingrith^^^MD|^^^SHD-CLINIC-3||||LOT-N4471K|20270630|XXX^Lot maker^MVX|||CP|A
+RXR|IM|LD
+OBX|1|CE|64994-7^Vaccine funding source^LN||VXC50^Public^CDCPHINVS||||||F|||20261015115500
+OBX|2|TX|NOTE^Clinic note||Mother Okanna Zavrelkov signed consent; child Mirellane tolerated well. Next visit letter to 63 Crabapple Hollow.||||||F

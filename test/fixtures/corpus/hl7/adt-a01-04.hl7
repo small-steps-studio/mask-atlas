@@ -1,0 +1,8 @@
+MSH|^~\&|REGSYS|NORDHAVN KLINIKK|ORDHUB|SVALBEKK LAB|20261110093015||ADT^A01^ADT_A01|NK-ADT-20261110-11|P|2.8|||AL|NE|SWE|UNICODE UTF-8
+EVN|A01|20261110093000
+PID|1||NK-MRN-6630142^^^NORDK^MR||Ørnskov-Léveillé^Thørvaldine^Éloïse||19650418|F|||Åkerlundsvägen 27^^Göttlingby^^41123^SWE||+46 31 555 0148^PRN^PH^^^^^^^^^^~^NET^Internet^thorvaldine.ornskov@postbox.example|||||NK-ACC-440271|934-18-6602
+NK1|1|Gørvald^Ågot|DAU||+46 31 555 0177^PRN^PH
+PV1|1|I|3A^12^1^NORDK||||7712908^Bjørnstad-Wärn^Hjalmar^^^Dr||||||||||||NK-V-90114|||||||||||||||||||||||||20261110090500
+PV2|||Patient Thørvaldine Ørnskov-Léveillé arrives with chest tightness. Daughter Ågot speaks Swedish only, tel +46 31 555 0177.
+DG1|1||R07.4^Bröstsmärta^I10||20261110
+AL1|1|DA|^Penicillin|SV|Utslag

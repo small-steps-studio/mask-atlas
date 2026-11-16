@@ -1,0 +1,10 @@
+MSH|^~\&|FRONTDESK|SORRELBY FAMILY CARE|SCHEDHUB|SORRELBY FAMILY CARE|20261001074455||ADT^A04^ADT_A01|SFC0010047|P|2.6
+EVN|A04|20261001074400
+PID|1||MRB-300481^^^SFC^MR||Marrowby^Evandrel^Q^^^^L||20010829|M|||6 Pennybright Row^^Wickersham^VT^05401^USA||(802)555-0114^PRN^PH|||||SFC-ENC-99130|905-62-0198
+PD1|||SORRELBY FAMILY CARE^^^^^^FI^^^^SFC-FAC-0021|3345217^Thistlewick^Aldous^^^MD
+ROL|1|UC|PP|3345217^Thistlewick^Aldous^^^MD
+NK1|1|Marrowby^Hesperwynn|MTH|6 Pennybright Row^^Wickersham^VT^05401|(802)555-0114
+PV1|1|O|CLINIC2^^^SFC||||3345217^Thistlewick^Aldous^^^MD||||||||||||SFC-V-228130|||||||||||||||||||||||||20261001074300
+PV2|||Annual physical. Evandrel Marrowby asked that results be sent by e-mail.
+DG1|1||Z00.00^Encounter for general adult medical exam^I10||20261001
+AL1|1|DA|^Sulfonamide|MO|NAUSEA

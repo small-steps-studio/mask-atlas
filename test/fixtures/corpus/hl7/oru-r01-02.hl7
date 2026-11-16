@@ -1,0 +1,12 @@
+MSH|^~\&|CHEMLINE|QUARRINGDEL DIAGNOSTICS|PORTALIN|HALDRINN GENERAL|20261028164500-0500||ORU^R01^ORU_R01|QD-RES-8830154|P|2.7|||NE|AL
+PID|1||YC-0907711^^^HGEN^MR||Yarrowick^Calderyn^Vale^^^^L||19910217|M|||36 Ferndrake Steps^^Pellsworth^NY^11201^USA||(718)555-0172^PRN^PH|||||HG-ACC-3301876|941-22-8039
+PV1|1|O|OUTLAB^^^HGEN||||9930651^Moorcastrel^Valentyne^^^MD||||||||||||HG-V-6612480
+ORC|RE|HG-PLC-441806|QD-FIL-9902317|||||||||9930651^Moorcastrel^Valentyne^^^MD
+OBR|1|HG-PLC-441806|QD-FIL-9902317|57698-3^Lipid panel^LN|||20261028070000|||||||||9930651^Moorcastrel^Valentyne^^^MD||||||20261028163000|||F
+OBX|1|NM|4548-4^Hemoglobin A1c^LN||6.1|%|4.0-5.6|H|||F|||20261028070000
+OBX|2|NM|2093-3^Cholesterol^LN||212|mg/dL|<200|H|||F|||20261028070000
+OBX|3|NM|13457-7^LDL cholesterol^LN||131|mg/dL|<100|H|||F|||20261028070000
+OBX|4|NM|2345-7^Glucose^LN||118|mg/dL|70-99|H|||F|||20261028070000
+NTE|1|L|Patient Calderyn Yarrowick (DOB 02/17/1991) called on 2026-10-28 from 718-555-0172 asking for a paper copy.
+NTE|2|L|Please e-mail the summary to calderyn.yarrowick@mailbox.example and keep the original sample until 10/30/2026.
+NTE|3|L|Insurance card shows member VM-MEMBER-55028814; guarantor is Yarrowick, Tamsinella.
