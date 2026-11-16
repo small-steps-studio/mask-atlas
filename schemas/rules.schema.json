@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Mask Atlas rule file",
+  "description": "Adds paths to the built-in profile of Mask Atlas, changes the kind of a path or switches a built-in path off. The first rule that matches a field wins.",
+  "type": "object",
+  "required": ["version", "rules"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": 1, "description": "The version of the rule file format." },
+    "rules": {
+      "type": "array",
+      "maxItems": 2000,
+      "items": {
+        "type": "object",
+        "required": ["format", "path", "kind"],
+        "additionalProperties": false,
+        "properties": {
+          "format": { "enum": ["hl7", "x12", "fhir"], "description": "The message format the rule applies to." },
+          "path": {
+            "type": "string",
+            "maxLength": 200,
+            "description": "HL7: SEG-field or SEG-field.component (Z* for every Z segment), for example ZPD-5 or PID-5.2. X12: SEG-NN with an optional element test, for example NM1-09 or NM1[NM101=IL]-09. FHIR: dotted element names without indexes, for example Patient.contact.name.text, or *.note.text, or just the last names such as valueString."
+          },
+          "kind": {
+            "enum": ["keep", "name", "family", "given", "org", "street", "city", "zip", "address", "date", "phone", "email", "ssn", "url", "ip", "record", "plan", "licence", "device", "id", "free-text", "binary"],
+            "description": "keep switches a built-in path off; free-text reads the value as running text; the other kinds replace the value as described in the documentation."
+          },
+          "dateFormat": { "enum": ["hl7", "iso", "d8", "rd8", "yymmdd"], "description": "Only for kind date: the layout of the value (hl7: YYYYMMDD[HHMMSS], iso: YYYY-MM-DD, d8: CCYYMMDD, rd8: CCYYMMDD-CCYYMMDD, yymmdd)." }
+        }
+      }
+    }
+  }
+}
