@@ -1,0 +1,112 @@
+{
+  "resourceType": "Encounter",
+  "id": "enc-9904127",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://lundquist-health.example/ids/visit",
+      "value": "VISIT-LH-9904127"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "IMP"
+  },
+  "type": [
+    {
+      "text": "Inpatient cardiology stay"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/pat-LH-30188",
+    "display": "Cassandrel Wintermoor-Achebe"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "ATND"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/prac-LH-1190",
+        "display": "Dr Lysandrel Fairbrook-Nnamdi"
+      }
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "REF"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "display": "Dr Teodoric Sandringham-Ong"
+      }
+    }
+  ],
+  "period": {
+    "start": "2026-11-01T09:30:00+00:00",
+    "end": "2026-11-05T11:00:00+00:00"
+  },
+  "reasonCode": [
+    {
+      "text": "Chest pain since 2026-10-31; spouse Odessarine Wintermoor-Achebe phoned from +1 305 555 0188"
+    }
+  ],
+  "diagnosis": [
+    {
+      "condition": {
+        "reference": "Condition/cond-LH-4410",
+        "display": "Unstable angina"
+      },
+      "rank": 1
+    }
+  ],
+  "account": [
+    {
+      "reference": "Account/acct-LH-5517203",
+      "display": "ACCT-LH-5517203"
+    }
+  ],
+  "hospitalization": {
+    "admitSource": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/admit-source",
+          "code": "emd"
+        }
+      ]
+    },
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+          "code": "home"
+        }
+      ]
+    }
+  },
+  "location": [
+    {
+      "location": {
+        "display": "Cardiac ward 6, bed 14"
+      },
+      "status": "completed"
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/org-lundquist",
+    "display": "Lundquist Ridge Hospital"
+  }
+}

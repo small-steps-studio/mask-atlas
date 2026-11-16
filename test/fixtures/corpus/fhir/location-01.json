@@ -1,0 +1,80 @@
+{
+  "resourceType": "Location",
+  "id": "loc-4410288",
+  "identifier": [
+    {
+      "system": "http://thistledown-health.example/ids/loc",
+      "value": "LOC-TD-4410288"
+    }
+  ],
+  "status": "active",
+  "name": "Thistledown East Annex",
+  "alias": [
+    "East Annex"
+  ],
+  "description": "Walk-in clinic behind the car park at 88 Plumtree Hollow; call +1 971 555 0136 for step-free access.",
+  "mode": "instance",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OUTPHARM"
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1 971 555 0136",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "eastannex@thistledown-health.example"
+    },
+    {
+      "system": "url",
+      "value": "https://thistledown-health.example/locations/east-annex"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "line": [
+      "88 Plumtree Hollow"
+    ],
+    "city": "Eldermere",
+    "district": "Clackamas",
+    "state": "OR",
+    "postalCode": "97035",
+    "country": "US"
+  },
+  "position": {
+    "longitude": -122.64714,
+    "latitude": 45.41203,
+    "altitude": 52
+  },
+  "managingOrganization": {
+    "reference": "Organization/org-thistledown",
+    "display": "Thistledown Health"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "openingTime": "07:30:00",
+      "closingTime": "19:00:00"
+    }
+  ],
+  "endpoint": [
+    {
+      "reference": "Endpoint/ep-td-4410288"
+    }
+  ]
+}

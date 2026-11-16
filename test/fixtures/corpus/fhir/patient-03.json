@@ -1,0 +1,92 @@
+{
+	"resourceType": "Patient",
+	"id": "pat-RM-7720318",
+	"text": {
+		"status": "additional",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Thelonwick Rushmere-Adjei</h1><table><tbody><tr><td>MRN</td><td>RM-7720318</td></tr><tr><td>Born</td><td>1948-12-03</td></tr><tr><td>Phone</td><td>+1 701 555 0114</td></tr><tr><td>Address</td><td>3 Bluebell Chambers, Pennard Vale</td></tr></tbody></table></div>"
+	},
+	"identifier": [
+		{
+			"use": "usual",
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+						"code": "MR"
+					}
+				]
+			},
+			"system": "http://pennard-health.example/ids/mrn",
+			"value": "RM-7720318"
+		},
+		{
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+						"code": "SS"
+					}
+				]
+			},
+			"system": "http://hl7.org/fhir/sid/us-ssn",
+			"value": "927-13-5584"
+		},
+		{
+			"system": "http://pennard-health.example/ids/member",
+			"value": "PV-MEMBER-3392015"
+		}
+	],
+	"name": [
+		{
+			"use": "official",
+			"family": "Rushmere-Adjei",
+			"given": [
+				"Thelonwick"
+			],
+			"prefix": [
+				"Mr"
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "+1 701 555 0114",
+			"use": "home"
+		},
+		{
+			"system": "email",
+			"value": "thelonwick.ra@postbox.example"
+		}
+	],
+	"gender": "male",
+	"birthDate": "1948-12-03",
+	"address": [
+		{
+			"use": "home",
+			"line": [
+				"3 Bluebell Chambers"
+			],
+			"city": "Pennard Vale",
+			"state": "ND",
+			"postalCode": "58102"
+		}
+	],
+	"contact": [
+		{
+			"name": {
+				"family": "Rushmere-Adjei",
+				"given": [
+					"Calendula"
+				]
+			},
+			"telecom": [
+				{
+					"system": "phone",
+					"value": "+1 701 555 0119",
+					"use": "mobile"
+				}
+			]
+		}
+	]
+}

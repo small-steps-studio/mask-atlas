@@ -1,0 +1,56 @@
+{
+  "resourceType": "Device",
+  "id": "dev-3301772",
+  "identifier": [
+    {
+      "system": "http://fenwick-instruments.example/ids/asset",
+      "value": "ASSET-FW-3301772"
+    }
+  ],
+  "udiCarrier": [
+    {
+      "deviceIdentifier": "00999988003281",
+      "issuer": "http://hl7.org/fhir/NamingSystem/gs1-di",
+      "carrierHRF": "(01)00999988003281(21)SN-9920417(17)271231(10)LOT4410X"
+    }
+  ],
+  "status": "active",
+  "manufacturer": "Fenwick Instrumentation Works",
+  "manufactureDate": "2025-02-11",
+  "expirationDate": "2027-12-31",
+  "lotNumber": "LOT4410X",
+  "serialNumber": "SN-9920417",
+  "deviceName": [
+    {
+      "name": "Infusion pump",
+      "type": "user-friendly-name"
+    }
+  ],
+  "partNumber": "FW-PUMP-220",
+  "patient": {
+    "reference": "Patient/pat-FW-1180",
+    "display": "Gwendolith Rookwood-Amadi"
+  },
+  "owner": {
+    "display": "Fenwick Home Care Services"
+  },
+  "contact": [
+    {
+      "system": "phone",
+      "value": "+1 213 555 0127"
+    },
+    {
+      "system": "email",
+      "value": "support@fenwick-instruments.example"
+    }
+  ],
+  "url": "https://devices.fenwick-instruments.example/d/SN-9920417",
+  "location": {
+    "display": "Home of Gwendolith Rookwood-Amadi, 5 Cranwell Mews"
+  },
+  "note": [
+    {
+      "text": "Pump SN-9920417 fitted at 5 Cranwell Mews; patient Gwendolith Rookwood-Amadi to call +1 213 555 0127 for faults."
+    }
+  ]
+}

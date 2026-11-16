@@ -1,0 +1,63 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "dr-7710932",
+  "identifier": [
+    {
+      "system": "http://marlinspike-labs.example/ids/accession",
+      "value": "ACC-ML-7710932"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "HM"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "58410-2",
+        "display": "CBC panel"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/pat-ML-2204",
+    "display": "Perpetua Windrush-Okeke"
+  },
+  "effectiveDateTime": "2026-11-02T08:00:00Z",
+  "issued": "2026-11-02T14:30:00Z",
+  "performer": [
+    {
+      "display": "Marlinspike Laboratories"
+    }
+  ],
+  "resultsInterpreter": [
+    {
+      "display": "Dr Cornelius Ashby-Vance"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/obs-ML-1"
+    }
+  ],
+  "conclusion": "Mild anaemia. Report discussed with Perpetua Windrush-Okeke on 2026-11-02 by phone +1 202 555 0143.",
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "language": "en",
+      "data": "JVBERi0xLjQKxOMCMZkdrax4QgJL5vUI66cu/2iycMIe2u",
+      "url": "https://reports.marlinspike-labs.example/r/ACC-ML-7710932.pdf",
+      "size": 48213,
+      "hash": "GuKLRtWBTAcZrImNSn5cUbMCwFe=",
+      "title": "CBC report"
+    }
+  ]
+}

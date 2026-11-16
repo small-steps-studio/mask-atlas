@@ -1,0 +1,93 @@
+{
+  "resourceType": "Patient",
+  "id": "MRN-3320419",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2026-11-07T10:05:00Z"
+  },
+  "extension": [
+    {
+      "url": "http://example.org/fhir/StructureDefinition/portal-note",
+      "valueString": "Portal login for MRN-3320419 came from 203.0.113.58 on 2026-11-06"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "http://kettlewaite-clinic.example/ids/mrn",
+      "value": "MRN-3320419"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SS"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-ssn",
+      "value": "916-28-4470"
+    },
+    {
+      "system": "http://kettlewaite-clinic.example/ids/insurance",
+      "value": "KC-INS-5521908"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Kettlewaite-Boateng",
+      "given": [
+        "Marigoldine",
+        "Ansel"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1 509 555 0182",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "marigoldine.kb@postbox.example"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "2001-04-25",
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "72 Pennywick Alley"
+      ],
+      "city": "Larkhaven",
+      "state": "WA",
+      "postalCode": "99201"
+    }
+  ],
+  "link": [
+    {
+      "other": {
+        "reference": "Patient/MRN-3320418"
+      },
+      "type": "seealso"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "display": "Dr Wilhelmsen Orchardleigh-Nwosu"
+    }
+  ]
+}

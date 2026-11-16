@@ -1,0 +1,138 @@
+{
+  "resourceType": "Practitioner",
+  "id": "prac-8827140",
+  "meta": {
+    "lastUpdated": "2026-08-14T11:02:51Z"
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Dr Thessalien Vandermeulen-Okafor, reachable on +1 312 555 0194.</p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://example.org/fhir/StructureDefinition/last-login",
+      "valueString": "Signed in from workstation 10.20.30.41"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NPI"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1306772819"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "DEA"
+          }
+        ]
+      },
+      "system": "urn:example:dea",
+      "value": "DEA-BV4417209"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "LN"
+          }
+        ]
+      },
+      "system": "http://northern-plains-board.example/licence",
+      "value": "LIC-OH-0094412"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Vandermeulen-Okafor",
+      "given": [
+        "Thessalien",
+        "Corrin"
+      ],
+      "prefix": [
+        "Dr"
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1 312 555 0194",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "+1 312 555 0195"
+    },
+    {
+      "system": "email",
+      "value": "t.vandermeulen@postbox.example"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "line": [
+        "512 Lanternwick Row",
+        "Floor 4"
+      ],
+      "city": "Pendlebury Heights",
+      "state": "IL",
+      "postalCode": "60611"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1969-03-21",
+  "photo": [
+    {
+      "contentType": "image/jpeg",
+      "url": "https://staff.pendlebury-medical.example/img/8827140.jpg",
+      "title": "Staff badge photo"
+    }
+  ],
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "http://northern-plains-board.example/licence",
+          "value": "LIC-OH-0094412"
+        }
+      ],
+      "code": {
+        "text": "Doctor of Medicine"
+      },
+      "period": {
+        "start": "1998-06-01",
+        "end": "2028-06-30"
+      },
+      "issuer": {
+        "display": "Northern Plains Medical Board"
+      }
+    }
+  ],
+  "communication": [
+    {
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en"
+        }
+      ]
+    }
+  ]
+}

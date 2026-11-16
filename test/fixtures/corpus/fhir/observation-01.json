@@ -1,0 +1,85 @@
+{
+  "resourceType": "Observation",
+  "id": "obs-6620741",
+  "identifier": [
+    {
+      "system": "http://corvelle-labs.example/ids/obs",
+      "value": "OBS-CL-6620741"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "4548-4",
+        "display": "Hemoglobin A1c"
+      }
+    ],
+    "text": "HbA1c"
+  },
+  "subject": {
+    "reference": "Patient/pat-CL-4421",
+    "display": "Isadoreth Whittlecombe-Pryce"
+  },
+  "effectiveDateTime": "2026-10-26T07:45:00Z",
+  "issued": "2026-10-26T13:20:11Z",
+  "performer": [
+    {
+      "reference": "Practitioner/prac-CL-77",
+      "display": "Dr Alaric Henshaw-Boateng"
+    }
+  ],
+  "valueString": "6.1 % - result discussed with Isadoreth Whittlecombe-Pryce by phone on +1 415 555 0171",
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "H"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Isadoreth Whittlecombe-Pryce asked for a copy at isadora.wp@postbox.example; sample collected 2026-10-26."
+    }
+  ],
+  "device": {
+    "display": "Analyser unit AN-SER-558210"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "2345-7",
+            "display": "Glucose"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 118,
+        "unit": "mg/dL"
+      }
+    },
+    {
+      "code": {
+        "text": "Technician comment"
+      },
+      "valueString": "Hemolysis index normal"
+    }
+  ]
+}

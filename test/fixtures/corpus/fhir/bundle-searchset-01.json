@@ -1,0 +1,223 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://fhir.larkspur-health.example/r4/Patient?family=Rosenquist-Abara&birthdate=1962-09-08&_revinclude=Encounter:patient"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://fhir.larkspur-health.example/r4/Patient/7740215",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7740215",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR"
+                }
+              ]
+            },
+            "system": "http://larkspur-health.example/ids/mrn",
+            "value": "LK-7740215"
+          },
+          {
+            "system": "http://larkspur-health.example/ids/insurance",
+            "value": "LK-INS-30991822"
+          }
+        ],
+        "name": [
+          {
+            "family": "Rosenquist-Abara",
+            "given": [
+              "Wilhelmina",
+              "Odette"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1 360 555 0134",
+            "use": "mobile"
+          },
+          {
+            "system": "email",
+            "value": "wilhelmina.ra@postbox.example"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1962-09-08",
+        "address": [
+          {
+            "line": [
+              "275 Gannet Rock Road"
+            ],
+            "city": "Larkspur Cove",
+            "state": "WA",
+            "postalCode": "98225"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "reference": "https://fhir.larkspur-health.example/r4/Practitioner/301"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "https://fhir.larkspur-health.example/r4/Organization/12"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.larkspur-health.example/r4/Encounter/9030",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "9030",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "https://fhir.larkspur-health.example/r4/Patient/7740215"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "https://fhir.larkspur-health.example/r4/Practitioner/301"
+            }
+          }
+        ],
+        "period": {
+          "start": "2026-09-21T09:00:00Z",
+          "end": "2026-09-21T09:30:00Z"
+        },
+        "identifier": [
+          {
+            "value": "LK-V-5520933"
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.larkspur-health.example/r4/Encounter/9031",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "9031",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "https://fhir.larkspur-health.example/r4/Patient/7740215"
+        },
+        "period": {
+          "start": "2026-10-19T14:00:00Z",
+          "end": "2026-10-19T14:25:00Z"
+        },
+        "identifier": [
+          {
+            "value": "LK-V-5520977"
+          }
+        ],
+        "serviceProvider": {
+          "reference": "https://fhir.larkspur-health.example/r4/Organization/12"
+        }
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.larkspur-health.example/r4/Practitioner/301",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "301",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "LN"
+                }
+              ]
+            },
+            "system": "http://washington-board.example/licence",
+            "value": "LIC-WA-0071433"
+          }
+        ],
+        "name": [
+          {
+            "family": "Lindenhallow-Ezeani",
+            "given": [
+              "Bartholomeus"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1 360 555 0150",
+            "use": "work"
+          },
+          {
+            "system": "email",
+            "value": "b.lindenhallow@postbox.example"
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.larkspur-health.example/r4/Organization/12",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "12",
+        "name": "Larkspur Cove Family Clinic",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.larkspur-clinic.example"
+          },
+          {
+            "system": "phone",
+            "value": "+1 360 555 0100",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "9 Samphire Quay"
+            ],
+            "city": "Larkspur Cove",
+            "state": "WA",
+            "postalCode": "98225"
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    }
+  ]
+}

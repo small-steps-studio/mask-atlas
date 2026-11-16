@@ -1,0 +1,102 @@
+{
+  "resourceType": "Person",
+  "id": "person-mpi-91002",
+  "identifier": [
+    {
+      "system": "http://mpi.rosegarden-health.example",
+      "value": "MPI-91002774"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SS"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-ssn",
+      "value": "903-48-1275"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "DL"
+          }
+        ]
+      },
+      "system": "http://rosegarden-health.example/ids/licence",
+      "value": "DL-WQ-5520193"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Oyelaran-Pemberthy",
+      "given": [
+        "Ignatia",
+        "Rosalba"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1 206 555 0117",
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "+1 206 555 0152",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "ignatia.op@postbox.example"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1992-08-17",
+  "address": [
+    {
+      "line": [
+        "4417 Cobblestone Wharf"
+      ],
+      "city": "Seaward",
+      "state": "WA",
+      "postalCode": "98101"
+    }
+  ],
+  "photo": {
+    "contentType": "image/png",
+    "url": "https://mpi.rosegarden-health.example/photo/91002774",
+    "title": "MPI photo"
+  },
+  "managingOrganization": {
+    "display": "Rosegarden Health Alliance"
+  },
+  "active": true,
+  "link": [
+    {
+      "target": {
+        "reference": "Patient/pat-RG-30188",
+        "display": "Ignatia Oyelaran-Pemberthy"
+      },
+      "assurance": "level4"
+    },
+    {
+      "target": {
+        "reference": "Patient/pat-RG-30944",
+        "display": "I. R. Oyelaran-Pemberthy"
+      },
+      "assurance": "level3"
+    },
+    {
+      "target": {
+        "reference": "RelatedPerson/rel-RG-1180"
+      }
+    }
+  ]
+}

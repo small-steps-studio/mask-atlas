@@ -1,0 +1,74 @@
+{
+  "resourceType": "Procedure",
+  "id": "proc-8830415",
+  "identifier": [
+    {
+      "system": "http://quillsbury-ortho.example/ids/proc",
+      "value": "PROC-QO-8830415"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "code": "29881",
+        "display": "Knee arthroscopy"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/pat-QO-7720",
+    "display": "Thaddeorus Pellegrine-Okon"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-QO-3301"
+  },
+  "performedPeriod": {
+    "start": "2026-10-12T08:05:00Z",
+    "end": "2026-10-12T09:40:00Z"
+  },
+  "recorder": {
+    "display": "Nurse Brannigan-Esene"
+  },
+  "performer": [
+    {
+      "function": {
+        "text": "Surgeon"
+      },
+      "actor": {
+        "reference": "Practitioner/prac-QO-31",
+        "display": "Dr Cormorant Hallibrand-Yeo"
+      },
+      "onBehalfOf": {
+        "display": "Quillsbury Orthopedic Centre"
+      }
+    }
+  ],
+  "location": {
+    "display": "Quillsbury Orthopedic Centre, theatre 3, 14 Stonecutter Lane"
+  },
+  "reasonCode": [
+    {
+      "text": "Torn meniscus, left knee"
+    }
+  ],
+  "bodySite": [
+    {
+      "text": "Left knee"
+    }
+  ],
+  "outcome": {
+    "text": "Uncomplicated"
+  },
+  "report": [
+    {
+      "reference": "DiagnosticReport/dr-QO-8830415"
+    }
+  ],
+  "note": [
+    {
+      "text": "Thaddeorus Pellegrine-Okon to be called on +1 612 555 0165 after theatre; discharge letter by 2026-10-14."
+    }
+  ]
+}

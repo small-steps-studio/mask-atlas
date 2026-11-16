@@ -1,0 +1,78 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mr-4410552",
+  "identifier": [
+    {
+      "system": "http://brackenfield-health.example/ids/rx",
+      "value": "RX-BF-4410552"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "308192",
+        "display": "Amoxicillin 500 mg capsule"
+      }
+    ],
+    "text": "Amoxicillin 500 mg capsule"
+  },
+  "subject": {
+    "reference": "Patient/pat-BF-9902",
+    "display": "Lavendrel Greystone-Adeyinka"
+  },
+  "encounter": {
+    "reference": "Encounter/enc-BF-4417"
+  },
+  "authoredOn": "2026-11-09T15:20:00Z",
+  "requester": {
+    "reference": "Practitioner/prac-BF-12",
+    "display": "Dr Emmerich Talbotsford-Ng"
+  },
+  "reasonCode": [
+    {
+      "text": "Sinusitis"
+    }
+  ],
+  "insurance": [
+    {
+      "reference": "Coverage/cov-BF-9902",
+      "display": "Brackenfield Mutual member BM-4430871"
+    }
+  ],
+  "note": [
+    {
+      "text": "Pharmacy to call Lavendrel Greystone-Adeyinka on +1 303 555 0129 before dispensing."
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "text": "Take one capsule three times daily for 7 days, dispensed for Lavendrel Greystone-Adeyinka",
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "text": "Oral"
+      }
+    }
+  ],
+  "dispenseRequest": {
+    "validityPeriod": {
+      "start": "2026-11-09",
+      "end": "2026-12-09"
+    },
+    "quantity": {
+      "value": 21,
+      "unit": "capsule"
+    },
+    "performer": {
+      "display": "Hollyberry Pharmacy, 75 Kettleford Road"
+    }
+  }
+}

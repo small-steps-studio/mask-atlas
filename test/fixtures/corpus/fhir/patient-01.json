@@ -1,0 +1,220 @@
+{
+  "resourceType": "Patient",
+  "id": "6e21c4d8-3b07-4c95-a1f0-7d0392be5a14",
+  "meta": {
+    "versionId": "4",
+    "lastUpdated": "2026-10-21T09:14:22Z",
+    "source": "http://10.12.4.77/feeds/registration",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Patient"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Dr Aldrith Joss Zorvanelle III, estate contact Ysolwen Zorvanelle, phone +1 614 555 0166.</p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://example.org/fhir/StructureDefinition/contact-note",
+      "valueString": "Estate contact is Ysolwen Zorvanelle on +1 614 555 0166; letters to ysolwen.z@mailbox.example."
+    },
+    {
+      "url": "http://example.org/fhir/StructureDefinition/registered-on",
+      "valueDate": "2026-09-30"
+    },
+    {
+      "url": "http://example.org/fhir/StructureDefinition/previous-address",
+      "valueAddress": {
+        "line": [
+          "27 Thimbleweed Alley"
+        ],
+        "city": "Orrington Falls",
+        "state": "OH",
+        "postalCode": "43085"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "http://hartlemoor-health.example/ids/mrn",
+      "value": "MRN-5530918",
+      "assigner": {
+        "display": "Hartlemoor Teaching Hospital"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SS"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-ssn",
+      "value": "941-66-2087"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "DL"
+          }
+        ]
+      },
+      "system": "http://hartlemoor-health.example/ids/licence",
+      "value": "N4411209887"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Zorvanelle",
+      "given": [
+        "Aldrith",
+        "Joss"
+      ],
+      "prefix": [
+        "Dr"
+      ],
+      "suffix": [
+        "III"
+      ],
+      "text": "Dr Aldrith Joss Zorvanelle III"
+    },
+    {
+      "use": "maiden",
+      "family": "Pennywhistler",
+      "given": [
+        "Aldrith"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1 614 555 0173",
+      "use": "mobile"
+    },
+    {
+      "system": "phone",
+      "value": "+1 614 555 0120",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "+1 614 555 0121"
+    },
+    {
+      "system": "email",
+      "value": "aldrith.zorvanelle@mailbox.example"
+    },
+    {
+      "system": "url",
+      "value": "https://aldrith-zorvanelle.pages.example"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1984-06-12",
+  "deceasedDateTime": "2026-10-02T04:30:00Z",
+  "address": [
+    {
+      "use": "home",
+      "type": "both",
+      "line": [
+        "1182 Marlowe Quay",
+        "Flat 4"
+      ],
+      "city": "Hartlemoor",
+      "district": "Franklin County",
+      "state": "OH",
+      "postalCode": "43215",
+      "country": "US",
+      "period": {
+        "start": "2019-04-01"
+      }
+    }
+  ],
+  "photo": [
+    {
+      "contentType": "image/jpeg",
+      "data": "/9j/4AAQSkZJRgIBplOieN/lGAg8AcPYdmg2Uuyj6jfqRPPE",
+      "url": "https://photos.hartlemoor-health.example/p/MRN-5530918.jpg",
+      "title": "Registration portrait",
+      "creation": "2026-09-30"
+    }
+  ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+              "code": "N"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "family": "Zorvanelle",
+        "given": [
+          "Ysolwen"
+        ]
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+1 614 555 0166"
+        },
+        {
+          "system": "email",
+          "value": "ysolwen.z@mailbox.example"
+        }
+      ],
+      "address": {
+        "line": [
+          "1182 Marlowe Quay"
+        ],
+        "city": "Hartlemoor",
+        "state": "OH",
+        "postalCode": "43215"
+      },
+      "gender": "female"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "reference": "Practitioner/prac-8827140",
+      "display": "Dr Tarrowsfield-Mbeki"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/org-hartlemoor-1",
+    "display": "Hartlemoor Teaching Hospital"
+  },
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "en"
+          }
+        ]
+      },
+      "preferred": true
+    }
+  ]
+}

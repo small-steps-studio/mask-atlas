@@ -1,0 +1,83 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "docref-9910345",
+  "masterIdentifier": {
+    "system": "http://stonefield-health.example/ids/doc",
+    "value": "DOC-SF-9910345"
+  },
+  "identifier": [
+    {
+      "system": "http://stonefield-health.example/ids/scan",
+      "value": "SCAN-SF-9910345-A"
+    }
+  ],
+  "status": "current",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "18842-5",
+        "display": "Discharge summary"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+          "code": "clinical-note"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/pat-SF-4402",
+    "display": "Tobiascan Fernsby-Oladipo"
+  },
+  "date": "2026-10-30T12:15:00Z",
+  "author": [
+    {
+      "display": "Dr Hortensia Blackwood-Mensah"
+    }
+  ],
+  "custodian": {
+    "display": "Stonefield Hospital Records Office, 61 Records Lane"
+  },
+  "description": "Discharge summary for Tobiascan Fernsby-Oladipo, scanned copy kept at 61 Records Lane.",
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/pdf",
+        "language": "en",
+        "data": "JVBERi0xLjQKY+Pw2pph1jT8IDp0+OOQyVA3vptG9ocxvJ",
+        "url": "https://docs.stonefield-health.example/d/9910345.pdf",
+        "size": 90211,
+        "hash": "m3m3aHAdegFW8eI1dNMHUgeQxxw=",
+        "title": "Discharge summary scan",
+        "creation": "2026-10-30"
+      }
+    },
+    {
+      "attachment": {
+        "contentType": "image/tiff",
+        "url": "https://scans.stonefield-health.example/s/9910345-1.tif",
+        "title": "Page 1 image"
+      }
+    }
+  ],
+  "context": {
+    "encounter": [
+      {
+        "reference": "Encounter/enc-SF-5517"
+      }
+    ],
+    "period": {
+      "start": "2026-10-24",
+      "end": "2026-10-30"
+    },
+    "facilityType": {
+      "text": "Hospital"
+    }
+  }
+}
