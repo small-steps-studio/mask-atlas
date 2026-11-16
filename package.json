@@ -1,0 +1,234 @@
+{
+  "name": "mask-atlas",
+  "displayName": "Mask Atlas",
+  "description": "Mask and pseudonymise names, addresses, dates and ids in HL7 v2, FHIR JSON and X12 test messages. Free risk report and masking; Pro: consistent pseudonyms, date shifting, folders, verification. A helper, not a guarantee.",
+  "version": "0.1.0",
+  "publisher": "SmallStepsStudio",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "icon": "media/icon.png",
+  "pricing": "Trial",
+  "homepage": "https://github.com/small-steps-studio/mask-atlas#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/small-steps-studio/mask-atlas"
+  },
+  "bugs": {
+    "url": "https://github.com/small-steps-studio/mask-atlas/issues"
+  },
+  "galleryBanner": {
+    "color": "#17324a",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Other",
+    "Testing"
+  ],
+  "keywords": [
+    "hl7",
+    "hl7 v2",
+    "fhir",
+    "x12",
+    "edi",
+    "anonymize",
+    "anonymise",
+    "de-identify",
+    "deidentify",
+    "pseudonymize",
+    "mask",
+    "redact",
+    "scrub",
+    "test data",
+    "patient data",
+    "healthcare integration",
+    "837",
+    "835",
+    "adt",
+    "pii",
+    "sanitize"
+  ],
+  "main": "./src/extension.js",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": "limited",
+      "description": "In a workspace that is not trusted, the settings of the workspace that keep identifiers or switch off a protection (envelope identifiers, organisation names, date shifting, free-text reading, formula neutralisation and the rule file) are ignored; your own user settings still apply.",
+      "restrictedConfigurations": [
+        "maskAtlas.keepEnvelopeIdentifiers",
+        "maskAtlas.maskOrganisations",
+        "maskAtlas.shiftDates",
+        "maskAtlas.scanFreeText",
+        "maskAtlas.rulesFile",
+        "maskAtlas.export.neutraliseFormulas"
+      ]
+    },
+    "virtualWorkspaces": {
+      "supported": "limited",
+      "description": "De-identify Folder and De-identify Selected Files read and write files on a normal file system. Scan, Mask Message In Place and De-identify Message work in virtual workspaces."
+    }
+  },
+  "activationEvents": [],
+  "scripts": {
+    "test": "node scripts/run-tests.js",
+    "gate": "node scripts/release-gate.js",
+    "vscode:prepublish": "node scripts/release-gate.js --skip-tests --prepublish",
+    "package": "npx --yes @vscode/vsce@4.1.1 package --no-dependencies",
+    "package:local": "node scripts/package-local.js",
+    "check-vsix": "node scripts/check-vsix.js"
+  },
+  "contributes": {
+    "commands": [
+      { "command": "maskAtlas.scan", "title": "Mask Atlas: Scan For Identifiers" },
+      { "command": "maskAtlas.maskDocument", "title": "Mask Atlas: Mask Message In Place" },
+      { "command": "maskAtlas.previewMask", "title": "Mask Atlas: Preview Masked Version" },
+      { "command": "maskAtlas.openSampleHl7", "title": "Mask Atlas: Open Sample HL7 Message" },
+      { "command": "maskAtlas.openSampleFhir", "title": "Mask Atlas: Open Sample FHIR Bundle" },
+      { "command": "maskAtlas.openSampleX12", "title": "Mask Atlas: Open Sample X12 Claim" },
+      { "command": "maskAtlas.openWalkthrough", "title": "Mask Atlas: Open Getting Started Guide" },
+      { "command": "maskAtlas.showDocumentation", "title": "Mask Atlas: Show Documentation" },
+      { "command": "maskAtlas.reportProblem", "title": "Mask Atlas: Report A Problem" },
+      { "command": "maskAtlas.buyPro", "title": "Mask Atlas: Buy Pro" },
+      { "command": "maskAtlas.enterKey", "title": "Mask Atlas: Enter Licence Key" },
+      { "command": "maskAtlas.licenceStatus", "title": "Mask Atlas: Show Licence Status" },
+      { "command": "maskAtlas.removeLicence", "title": "Mask Atlas: Remove Licence From This Machine" },
+      { "command": "maskAtlas.deidentifyDocument", "title": "Mask Atlas: De-identify Message (Pro)" },
+      { "command": "maskAtlas.deidentifyFiles", "title": "Mask Atlas: De-identify Selected Files (Pro)" },
+      { "command": "maskAtlas.deidentifyFolder", "title": "Mask Atlas: De-identify Folder (Pro)" },
+      { "command": "maskAtlas.verify", "title": "Mask Atlas: Verify De-identified Output (Pro)" },
+      { "command": "maskAtlas.exportMap", "title": "Mask Atlas: Export Pseudonym Map (Pro)" },
+      { "command": "maskAtlas.forgetRun", "title": "Mask Atlas: Forget Last Run" },
+      { "command": "maskAtlas.setSeed", "title": "Mask Atlas: Set Pseudonym Seed (Pro)" },
+      { "command": "maskAtlas.clearSeed", "title": "Mask Atlas: Clear Pseudonym Seed" },
+      { "command": "maskAtlas.createRulesFile", "title": "Mask Atlas: Create Rules File (Pro)" }
+    ],
+    "submenus": [
+      { "id": "maskAtlas.editorMenu", "label": "Mask Atlas" }
+    ],
+    "menus": {
+      "editor/context": [
+        { "submenu": "maskAtlas.editorMenu", "when": "resourceExtname =~ /^\\.(hl7|json|ndjson|x12|edi|837|835|834|270|271|276|277|278|txt|dat)$/", "group": "maskAtlas" }
+      ],
+      "maskAtlas.editorMenu": [
+        { "command": "maskAtlas.scan", "group": "1_free@1" },
+        { "command": "maskAtlas.previewMask", "group": "1_free@2" },
+        { "command": "maskAtlas.maskDocument", "group": "1_free@3" },
+        { "command": "maskAtlas.deidentifyDocument", "group": "2_pro@1" },
+        { "command": "maskAtlas.verify", "group": "2_pro@2" }
+      ],
+      "explorer/context": [
+        { "command": "maskAtlas.deidentifyFolder", "when": "explorerResourceIsFolder", "group": "maskAtlas@1" },
+        { "command": "maskAtlas.deidentifyFiles", "when": "!explorerResourceIsFolder", "group": "maskAtlas@2" }
+      ]
+    },
+    "jsonValidation": [
+      { "fileMatch": ["mask-atlas-rules.json", "*.mask-rules.json"], "url": "./schemas/rules.schema.json" }
+    ],
+    "walkthroughs": [
+      {
+        "id": "maskAtlas.gettingStarted",
+        "title": "Get started with Mask Atlas",
+        "description": "Open a sample message, see which fields can point to a person, mask them, and try the Pro de-identification with the free 14-day trial.",
+        "steps": [
+          {
+            "id": "maskAtlas.step.openSample",
+            "title": "Open a sample message",
+            "description": "Mask Atlas reads HL7 v2 messages, FHIR R4 and R5 JSON and X12 healthcare interchanges. Open the short invented samples to follow along, or open one of your own test messages.\n[Open Sample HL7 Message](command:maskAtlas.openSampleHl7)\n[Open Sample FHIR Bundle](command:maskAtlas.openSampleFhir)\n[Open Sample X12 Claim](command:maskAtlas.openSampleX12)",
+            "media": { "markdown": "media/walkthrough/open-sample.md" },
+            "completionEvents": ["onCommand:maskAtlas.openSampleHl7", "onCommand:maskAtlas.openSampleFhir", "onCommand:maskAtlas.openSampleX12"]
+          },
+          {
+            "id": "maskAtlas.step.scan",
+            "title": "See which fields can point to a person",
+            "description": "The risk report counts the fields by category and lists their element paths with a masked shape. It never shows a value. The fields are also marked in the Problems panel.\n[Scan For Identifiers](command:maskAtlas.scan)",
+            "media": { "markdown": "media/walkthrough/scan.md" },
+            "completionEvents": ["onCommand:maskAtlas.scan"]
+          },
+          {
+            "id": "maskAtlas.step.mask",
+            "title": "Preview and mask",
+            "description": "Compare the original with the masked version side by side, then mask the message in place: letters become X and digits become 9, and the length of every value stays the same.\n[Preview Masked Version](command:maskAtlas.previewMask)\n[Mask Message In Place](command:maskAtlas.maskDocument)",
+            "media": { "markdown": "media/walkthrough/mask.md" },
+            "completionEvents": ["onCommand:maskAtlas.previewMask", "onCommand:maskAtlas.maskDocument"]
+          },
+          {
+            "id": "maskAtlas.step.pro",
+            "title": "De-identify with realistic pseudonyms (Pro trial)",
+            "description": "Pro replaces names, addresses, e-mail and numbers with invented ones that are the same everywhere in a run, moves the dates of a patient by one offset, reads the free text and checks the result. The first Pro command starts a free 14-day trial on this computer; no key, account or network is needed.\n[De-identify Message](command:maskAtlas.deidentifyDocument)\n[Show Licence Status](command:maskAtlas.licenceStatus)",
+            "media": { "markdown": "media/walkthrough/pro.md" },
+            "completionEvents": ["onCommand:maskAtlas.deidentifyDocument", "onCommand:maskAtlas.licenceStatus"]
+          },
+          {
+            "id": "maskAtlas.step.folder",
+            "title": "Folders, verification and limits",
+            "description": "De-identify Folder writes copies of every recognised file to a new folder, reads the copies from disk and verifies them. Read the report: it lists what could not be checked. You stay responsible for reviewing the output.\n[De-identify Folder](command:maskAtlas.deidentifyFolder)\n[Show Documentation](command:maskAtlas.showDocumentation)",
+            "media": { "markdown": "media/walkthrough/folder.md" },
+            "completionEvents": ["onCommand:maskAtlas.deidentifyFolder", "onCommand:maskAtlas.showDocumentation", "onStepSelected"]
+          }
+        ]
+      }
+    ],
+    "configuration": {
+      "title": "Mask Atlas",
+      "properties": {
+        "maskAtlas.maxFileSizeMB": {
+          "type": "number",
+          "default": 20,
+          "minimum": 0.1,
+          "maximum": 64,
+          "order": 1,
+          "markdownDescription": "Largest document, in megabytes, that the editor commands (**Scan For Identifiers**, **Mask Message In Place**, **Preview Masked Version**, **De-identify Message**) work on. Larger files are handled by **De-identify Folder** and **De-identify Selected Files** (Pro), which read them in pieces from disk."
+        },
+        "maskAtlas.keepEnvelopeIdentifiers": {
+          "type": "boolean",
+          "default": false,
+          "order": 2,
+          "markdownDescription": "Keep the identifiers of the envelope: sender, receiver and facility names, application names, message and batch control ids, X12 sender and receiver ids, assigning authorities and locations. By default they are replaced too, so that the first line of a message does not give away who sent it. Dates, names and numbers of the patient are replaced in any case."
+        },
+        "maskAtlas.maskOrganisations": {
+          "type": "boolean",
+          "default": true,
+          "order": 3,
+          "markdownDescription": "Replace the names of organisations (hospitals, clinics, laboratories, payers, employers) as well as people. Turn off when the organisation names are harmless in your test data."
+        },
+        "maskAtlas.shiftDates": {
+          "type": "boolean",
+          "default": true,
+          "order": 4,
+          "markdownDescription": "In Pro runs, move every date of a patient by one offset of 60 to 730 days (earlier or later) so that order and intervals stay the same. When off, dates are kept as they are."
+        },
+        "maskAtlas.dateOrder": {
+          "type": "string",
+          "enum": ["mdy", "dmy"],
+          "default": "mdy",
+          "order": 5,
+          "markdownDescription": "How a date such as `04/09/2026` that is written in free text is read: month first (`mdy`) or day first (`dmy`). Dates with a dot (`4.9.2026`) are always day first; dates such as `2026-09-04` are not ambiguous."
+        },
+        "maskAtlas.scanFreeText": {
+          "type": "boolean",
+          "default": true,
+          "order": 6,
+          "markdownDescription": "In Pro runs, read free text (notes, comments, narrative, text values) for names and numbers that were seen elsewhere in the same message and for e-mail addresses, telephone numbers, SSN-like numbers, IP addresses, dates and labelled numbers. When off, free text is not read: a name or number that appears only in a note stays in the output, and the run report and the verification say so."
+        },
+        "maskAtlas.rulesFile": {
+          "type": "string",
+          "default": "",
+          "order": 7,
+          "markdownDescription": "Path of a rule file (JSON, see **Create Rules File**) that adds paths to the built-in profile, changes their kind or switches them off. Relative to the first workspace folder, or absolute. Used by Pro runs."
+        },
+        "maskAtlas.markInProblems": {
+          "type": "boolean",
+          "default": true,
+          "order": 8,
+          "markdownDescription": "Mark the fields found by **Scan For Identifiers** in the Problems panel. A mark names the category and the element path; it never contains the value."
+        },
+        "maskAtlas.export.neutraliseFormulas": {
+          "type": "boolean",
+          "default": true,
+          "order": 9,
+          "markdownDescription": "In the CSV of the pseudonym map (Pro), put an apostrophe before every cell that starts with `=`, `+`, `-`, `@`, a tab or a carriage return, so that a spreadsheet shows it as text instead of running it as a formula. Turn off only when you need the exact values and open the file in a program that does not run formulas."
+        }
+      }
+    }
+  }
+}
