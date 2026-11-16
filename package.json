@@ -33,21 +33,13 @@
     "x12",
     "edi",
     "anonymize",
-    "anonymise",
     "de-identify",
-    "deidentify",
     "pseudonymize",
-    "mask",
-    "redact",
-    "scrub",
     "test data",
-    "patient data",
     "healthcare integration",
     "837",
     "835",
-    "adt",
-    "pii",
-    "sanitize"
+    "adt"
   ],
   "main": "./src/extension.js",
   "capabilities": {
