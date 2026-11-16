@@ -1,7 +1,7 @@
 {
   "name": "mask-atlas",
   "displayName": "Mask Atlas",
-  "description": "Mask and pseudonymise names, addresses, dates and ids in HL7 v2, FHIR JSON and X12 test messages. Free risk report and masking; Pro: consistent pseudonyms, date shifting, folders, verification. A helper, not a guarantee.",
+  "description": "Find and replace identifiers in HL7 v2, FHIR JSON and X12 test messages. Free risk report and replacement; Pro: consistent pseudonyms, date shifting, folders, verification. A helper, not a guarantee.",
   "version": "0.1.0",
   "publisher": "SmallStepsStudio",
   "license": "SEE LICENSE IN LICENSE.txt",
